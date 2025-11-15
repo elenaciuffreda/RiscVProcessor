@@ -1,5 +1,3 @@
-
-
 ## Descrizione del progetto
 
 Questo repository contiene l'implementazione di un semplice processore compatibile con l'ISA RISC‑V, sviluppato per il corso di Architettura dei Calcolatori. L'obiettivo è fornire una progettazione didattica che mostri i principali blocchi funzionali di una CPU (fetch, decode, execute, memory, writeback), l'implementazione della pipeline e il supporto alle istruzioni base di RISC‑V.
@@ -29,8 +27,13 @@ Elena Maria Ciuffreda, matr.119325
 - Logisim — utilizzato per la modellazione e simulazione del datapath e dei blocchi logici.
 - Java Runtime Environment (JRE) 8+ — necessario per eseguire Logisim.
 
+### Compilazione
+-Per compilare un programma RISC-V in un file .hex compatibile con la ROM di Logisim, usa lo script build.sh incluso nel progetto.
+-Assicurati di avere RARS installato e di eseguire il comando da Git Bash, WSL o qualsiasi shell con supporto Bash.
 
-### Come compilare e testare
+Esempio di compilazione
+./build.sh selection_sort.s selection_sort.hex
+
 
 
 ### Contribuire
