@@ -37,11 +37,11 @@ if [[ ! -f "$INPUT" ]]; then
 fi
 
 # --- Controllo se RARS è installato ---
-if ! command -v rars &> /dev/null; then
-    echo -e "${RED}[ERRORE]${RESET} RARS non trovato."
-    echo -e "Installa RARS o metti 'rars' nel PATH."
-    exit 1
-fi
+#if ! command -v rars &> /dev/null; then
+#    echo -e "${RED}[ERRORE]${RESET} RARS non trovato."
+#    echo -e "Installa RARS o metti 'rars' nel PATH."
+#    exit 1
+#fi
 
 # --- Inizio ---
 echo -e "${CYAN}========================================${RESET}"
@@ -51,7 +51,8 @@ echo ""
 echo -e "${YELLOW}[1/3] Compilo con RARS...${RESET}"
 
 # --- Avvio RARS ---
-rars a dump .text HexText "$TMPFILE" "$INPUT" &> /dev/null
+java -jar rars1_6.jar a dump .text HexText "$TMPFILE" "$INPUT"
+
 
 if [[ $? -ne 0 ]]; then
     echo -e "${RED}[ERRORE]${RESET} RARS ha fallito la compilazione."
@@ -74,4 +75,4 @@ cleanup
 
 echo -e "${GREEN}Finito!${RESET}"
 echo ""
-echo -e "${CYAN}Puoi caricare '$OUTPUT' nella ROM di Logisim.${RESET}"
+echo -e "${CYAN}Puoi caricare '$OUTPUT' nella ROM di Logisim!${RESET}"

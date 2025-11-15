@@ -30,8 +30,19 @@ Elena Maria Ciuffreda, matr.119325
 ### Compilazione
 - Per compilare un programma RISC-V in un file .hex compatibile con la ROM di Logisim, usa lo script build.sh incluso nel progetto. Assicurati di avere RARS installato e di eseguire il comando da Git Bash, WSL o qualsiasi shell con supporto Bash.
 
-Esempio di compilazione
-./build.sh selection_sort.s selection_sort.hex
+Esempio di compilazione (io ho usato Git Bash)
+- Assicurarsi che rars_1_6.jar si trovi nella stessa cartella dello script. (l'ho messo nella cartella per sicurezza)
+- Scrivere da terminale (git bash)
+./assemble_rars.sh selection_sort.s selection_sort.hex. Lascio qui un esempio:
+![Screenshot: esempio di compilazione RARS](./esempiocompilazione.png)
+
+- Generazione del file selection_sort.hex eseguita
+- Aprire il file del processore in Logisim
+- Click destro sulla rom
+![Qui:](./rom_riscv.png)
+- Caricare file selection_sort.hex
+- Run
+
 
 
 ### Contribuire
