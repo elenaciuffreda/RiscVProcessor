@@ -10,9 +10,8 @@ Elena Maria Ciuffreda, matr.119325
 
 ### Caratteristiche principali
 - Implementazione di un core RISC‑V RV32I di base.
-- Pipeline a N stadi (configurabile) con gestione di hazard e forwarding.
 - Supporto per istruzioni aritmetiche, logiche, load/store e branch.
-- Bancos di registri, ALU, unità di controllo e memoria dati/instr.
+- registri, ALU, unità di controllo e memoria dati/instr.
 - Testbench e suite di test per la verifica funzionale.
 
 
