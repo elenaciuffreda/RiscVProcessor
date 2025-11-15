@@ -36,7 +36,7 @@ Esempio di compilazione (io ho usato Git Bash)
 ./assemble_rars.sh selection_sort.s selection_sort.hex. Lascio qui un esempio:
 ![Screenshot: esempio di compilazione RARS](./esempiocompilazione.png)
 
-- Generazione del file selection_sort.hex eseguita
+- Generazione del file selection_sort.hex eseguita (nel caso non lo fosse, ho lasciato il file .hex)
 - Aprire il file del processore in Logisim
 - Click destro sulla rom
 ![Qui:](./rom_riscv.png)
