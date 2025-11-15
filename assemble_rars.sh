@@ -58,20 +58,20 @@ if [[ $? -ne 0 ]]; then
     exit 1
 fi
 
-echo -e "${GREEN}✔ Compilazione OK${RESET}"
+echo -e "${GREEN}Compilazione OK${RESET}"
 
 # --- Converti in HEX compatibile Logisim ---
-echo -e "${YELLOW}[2/3] Genero file HEX compatibile Logisim...${RESET}"
+echo -e "${YELLOW}[2/3]Genero file HEX compatibile Logisim...${RESET}"
 
 echo "v2.0 raw" > "$OUTPUT"
 cat "$TMPFILE" >> "$OUTPUT"
 
-echo -e "${GREEN}✔ File generato: ${CYAN}$OUTPUT${RESET}"
+echo -e "${GREEN}File generato: ${CYAN}$OUTPUT${RESET}"
 
 # --- Cleanup ---
 echo -e "${YELLOW}[3/3] Pulizia file temporanei...${RESET}"
 cleanup
 
-echo -e "${GREEN}✔ Finito!${RESET}"
+echo -e "${GREEN}Finito!${RESET}"
 echo ""
-echo -e "${CYAN}Puoi ora caricare '$OUTPUT' nella ROM di Logisim.${RESET}"
+echo -e "${CYAN}Puoi caricare '$OUTPUT' nella ROM di Logisim.${RESET}"
