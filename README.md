@@ -13,7 +13,7 @@ Elena Maria Ciuffreda, matr.119325
 - Testbench e suite di test per la verifica funzionale.
 
 
-### Istruzioni supportate (esempi)
+### Istruzioni supportate
 - Aritmetica: add, sub, addi
 - Logiche: and, or, xor
 - Load/Store: lw, sw
